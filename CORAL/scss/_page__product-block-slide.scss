@@ -1,0 +1,10 @@
+.swiper-button-prev,
+.swiper-button-next {
+    top: 37.23%;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: toRem(32);
+    color: rgba(30, 40, 50, 0.50);
+    font-weight: 600;
+}

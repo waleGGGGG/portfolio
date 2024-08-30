@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/iconsfont.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>lesson_19</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <div class="top">
+          <form action="#" name="form[search]" enctype="multipart/form-data" class="top__form search">
+            <button type="button" id="searchButton" class="search__button _icon-srch"></button>
+            <div id="searchWindow" class="search__hidden">
+              <input type="text" id="searchInput" autocomplete="off" required class="search__input">
+            </div>
+          </form>
+          <a href="#" class="top__logo">
+            <img src="img/header/top-section/logo.svg" alt="logo coral">
+          </a>
+          <div class="top__actions actions">
+            <div class="actions__adaptive-inner" data-da=".bottom , 520.98, 0">
+              <a href="#" class="actions__link _icon-acc">
+                <span>Account</span>
+              </a>
+              <a href="#" class="actions__link _icon-shop">
+                <span>Shoping</span>
+              </a>
+            </div>
+            <button type="button" id="toggleButton" class="actions__navigation-burger">
+              <span></span>
+            </button>
+          </div>
+        </div>
+        <nav class="bottom">
+          <ul class="bottom__list">
+            <li class="bottom__item">
+              <a href="#" class="bottom__link"> Jewelry & Accessories </a>
+            </li>
+            <li class="bottom__item">
+              <a href="#" class="bottom__link">Clothing & Shoes </a>
+            </li>
+            <li class="bottom__item">
+              <a href="#" class="bottom__link">Home & Living </a>
+            </li>
+            <li class="bottom__item">
+              <a href="#" class="bottom__link">Wedding & Party </a>
+            </li>
+            <li class="bottom__item">
+              <a href="#" class="bottom__link">Toys & Entertainment </a>
+            </li>
+            <li class="bottom__item">
+              <a href="#" class="bottom__link">Art & Collectibles </a>
+            </li>
+            <li class="bottom__item">
+              <a href="#" class="bottom__link">Craft Supplies & Tools </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page">
+      <div class="top-block">
+        <div class="top-block__container">
+          <!-- використано padding top оскільки відступ знизу на 30px більший, тоиу align-items: center не підходить -->
+          <section class="top-block__info info">
+            <h2 class="info__title">Collections</h2>
+            <!-- у тексті виправлені граматичні помилки, тому він розмістився не так як в макеті -->
+            <p class="info__about">
+              You can explore and shop many different collections from various
+              brands here.
+            </p>
+            <a href="#" class="info__shop-link link-shop">
+              <span class="_icon-shop">Shop now</span>
+            </a>
+          </section>
+          <div class="top-block__photo">
+            <!-- margin доданий до фотографії не дає декору піти за в'юпорт-->
+            <img src="img/main/collections/model-photo.webp" alt="model photo">
+          </div>
+        </div>
+      </div>
+      <div class="brands-block">
+        <div class="brands-block__container">
+          <ul class="label-list">
+            <li class="label-list__item">
+              <img src="img/main/brands/graphic.jpg" alt="graphic studio label">
+            </li>
+            <li class="label-list__item">
+              <img src="img/main/brands/salva.jpg" alt="s.salva art directorlabel">
+            </li>
+            <li class="label-list__item">
+              <img src="img/main/brands/golden-studio.jpg" alt="golden-studio label">
+            </li>
+            <li class="label-list__item">
+              <img src="img/main/brands/furniture.jpg" alt="furniture design label">
+            </li>
+            <li class="label-list__item">
+              <img src="img/main/brands/travel.jpg" alt="travel lookbook label">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="popular-block">
+        <div class="popular-block__container">
+          <section class="popular-block__items items">
+            <h2 class="items__title">Explore new and popular styles</h2>
+            <div class="items__card-box card">
+              <div class="card__items">
+                <a href="#">
+                  <img src="img/main/popular/manto.jpg" alt="manto">
+                  <div class="card__hover">
+                    <span class="card__category">Manto</span>
+                    <span class="card__counter">86 Product</span>
+                  </div>
+                  <span class="card__hot-ribbon">Hot</span>
+                </a>
+              </div>
+              <div class="card__items">
+                <a href="#">
+                  <img src="img/main/popular/pants.jpg" alt="pants">
+                  <div class="card__hover">
+                    <span class="card__category">Pants</span>
+                    <span class="card__counter">200 Product</span>
+                  </div>
+                  <!-- <span class="card__hot-ribbon">Hot</span> -->
+                </a>
+              </div>
+              <div class="card__items">
+                <a href="#">
+                  <img src="img/main/popular/coat.jpg" alt="coat">
+                  <div class="card__hover">
+                    <span class="card__category">Coat</span>
+                    <span class="card__counter">520 Product</span>
+                  </div>
+                  <!-- <span class="card__hot-ribbon">Hot</span> -->
+                </a>
+              </div>
+              <div class="card__items">
+                <a href="#">
+                  <img src="img/main/popular/shirt.jpg" alt="shirt">
+                  <div class="card__hover">
+                    <span class="card__category">Shirt</span>
+                    <span class="card__counter">320 Product</span>
+                  </div>
+                  <!-- <span class="card__hot-ribbon">Hot</span> -->
+                </a>
+              </div>
+              <div class="card__items">
+                <a href="#">
+                  <img src="img/main/popular/jacket.jpg" alt="jacket">
+                  <div class="card__hover">
+                    <span class="card__category">Jacket</span>
+                    <span class="card__counter">103 Product</span>
+                  </div>
+                  <span class="card__hot-ribbon">Hot</span>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="product-block">
+        <section class="product-block__container">
+          <h2 class="product-block__title">Or subscribe to the newsletter</h2>
+          <div class="product-block__category-items items-category">
+            <ul class="items-category__list">
+              <li>
+                <label for="all-products" class="items-category__label">
+                  <input type="radio" name="categories" value="form[all-products]" id="all-products" checked
+                    class="items-category__input">
+                  <span class="items-category__text">All products</span>
+                </label>
+              </li>
+              <li>
+                <label for="t-shirt" class="items-category__label">
+                  <input type="radio" name="categories" value="form[t-shirt]" id="t-shirt"
+                    class="items-category__input">
+                  <span class="items-category__text">T-Shirt</span>
+                </label>
+              </li>
+              <li>
+                <label for="hoodies" class="items-category__label">
+                  <input type="radio" name="categories" value="form[hoodies]" id="hoodies"
+                    class="items-category__input">
+                  <span class="items-category__text">Hoodies</span>
+                </label>
+              </li>
+              <li>
+                <label for="jacket" class="items-category__label">
+                  <input type="radio" name="categories" value="form[jacket]" id="jacket" class="items-category__input">
+                  <span class="items-category__text">Jacket</span>
+                </label>
+              </li>
+            </ul>
+            <button type="button" class="items-category__filter-button">
+              <span class="_icon-filt">Filter</span>
+            </button>
+          </div>
+          <div class="product-block__cards-section prod-card">
+
+            <article class="prod-card__article">
+              <div class="prod-card__inner">
+                <a href="#" class="prod-card__link-pict">
+                  <img src="img/main/product/adicolor-classics.webp" alt="Adicolor classics joggers"
+                    class="prod-card__picture">
+                </a>
+                <div class="prod-card__hover-items">
+                  <div class="prod-card__store-items">
+                    <button type="button" class="prod-card__favorite _icon-fav"></button>
+                    <button type="button" class="prod-card__search _icon-srch"></button>
+                  </div>
+                  <button type="button" class="prod-card__shop-button">
+                    <span class="_icon-shop">Shop now</span>
+                  </button>
+                </div>
+              </div>
+              <!-- <span class="prod-card__hot-ribbon">Hot</span>
+              <span class="prod-card__sale-ribbon">Sale</span> -->
+              <div class="prod-card__bottom-inner">
+                <a href="#">
+                  <h3 class="prod-card__caption">Adicolor classics joggers</h3>
+                </a>
+                <div class="prod-card__bottom-items items-bottom">
+                  <span class="items-bottom__category">Dress</span>
+                  <div class="items-bottom__price">
+                    <span class="items-bottom__actual">$63.85</span>
+                    <!-- <span class="items-bottom__sale"></span> -->
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="prod-card__article">
+              <div class="prod-card__inner">
+                <a href="#" class="prod-card__link-pict">
+                  <img src="img/main/product/nike-sportswear-bag.webp" alt="Nike Sportswear Futura Luxe"
+                    class="prod-card__picture">
+                </a>
+                <div class="prod-card__hover-items">
+                  <div class="prod-card__store-items">
+                    <button type="button" class="prod-card__favorite _icon-fav"></button>
+                    <button type="button" class="prod-card__search _icon-srch"></button>
+                  </div>
+                  <button type="button" class="prod-card__shop-button">
+                    <span class="_icon-shop">Shop now</span>
+                  </button>
+                </div>
+              </div>
+              <!-- <span class="prod-card__hot-ribbon">Hot</span>
+              <span class="prod-card__sale-ribbon">Sale</span> -->
+              <div class="prod-card__bottom-inner">
+                <a href="#">
+                  <h3 class="prod-card__caption">Nike Sportswear Futura Luxe</h3>
+                </a>
+                <div class="prod-card__bottom-items items-bottom">
+                  <span class="items-bottom__category">Bag</span>
+                  <div class="items-bottom__price">
+                    <span class="items-bottom__actual">$130.00</span>
+                    <!-- <span class="items-bottom__sale"></span> -->
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="prod-card__article">
+              <div class="prod-card__inner">
+                <a href="#" class="prod-card__link-pict">
+                  <img src="img/main/product/geometric-print.webp" alt="Geometric print Scarf"
+                    class="prod-card__picture">
+                </a>
+                <div class="prod-card__hover-items">
+                  <div class="prod-card__store-items">
+                    <button type="button" class="prod-card__favorite _icon-fav"></button>
+                    <button type="button" class="prod-card__search _icon-srch"></button>
+                  </div>
+                  <button type="button" class="prod-card__shop-button">
+                    <span class="_icon-shop">Shop now</span>
+                  </button>
+                </div>
+              </div>
+              <!-- <span class="prod-card__hot-ribbon">Hot</span>
+              <span class="prod-card__sale-ribbon">Sale</span> -->
+              <div class="prod-card__bottom-inner">
+                <a href="#">
+                  <h3 class="prod-card__caption">Geometric print Scarf</h3>
+                </a>
+                <div class="prod-card__bottom-items items-bottom">
+                  <span class="items-bottom__category">scarf</span>
+                  <div class="items-bottom__price">
+                    <span class="items-bottom__actual">$53.00</span>
+                    <!-- <span class="items-bottom__sale"></span> -->
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="prod-card__article">
+              <div class="prod-card__inner">
+                <a href="#" class="prod-card__link-pict">
+                  <img src="img/main/product/yellow-reserved.webp" alt="Yellow Reserved Hoodie"
+                    class="prod-card__picture">
+                </a>
+                <div class="prod-card__hover-items">
+                  <div class="prod-card__store-items">
+                    <button type="button" class="prod-card__favorite _icon-fav"></button>
+                    <button type="button" class="prod-card__search _icon-srch"></button>
+                  </div>
+                  <button type="button" class="prod-card__shop-button">
+                    <span class="_icon-shop">Shop now</span>
+                  </button>
+                </div>
+              </div>
+              <!-- <span class="prod-card__hot-ribbon">Hot</span> -->
+              <span class="prod-card__sale-ribbon">Sale</span>
+              <div class="prod-card__bottom-inner">
+                <a href="#">
+                  <h3 class="prod-card__caption">Yellow Reserved Hoodie</h3>
+                </a>
+                <div class="prod-card__bottom-items items-bottom">
+                  <span class="items-bottom__category">Dress</span>
+                  <div class="items-bottom__price">
+                    <span class="items-bottom__actual">$364.00</span>
+                    <span class="items-bottom__sale">$155.00</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="prod-card__article">
+              <div class="prod-card__inner">
+                <a href="#" class="prod-card__link-pict">
+                  <img src="img/main/product/basic-dress.webp" alt="Basic Dress Green" class="prod-card__picture">
+                </a>
+                <div class="prod-card__hover-items">
+                  <div class="prod-card__store-items">
+                    <button type="button" class="prod-card__favorite _icon-fav"></button>
+                    <button type="button" class="prod-card__search _icon-srch"></button>
+                  </div>
+                  <button type="button" class="prod-card__shop-button">
+                    <span class="_icon-shop">Shop now</span>
+                  </button>
+                </div>
+              </div>
+              <span class="prod-card__hot-ribbon">Hot</span>
+              <!-- <span class="prod-card__sale-ribbon">Sale</span> -->
+              <div class="prod-card__bottom-inner">
+                <a href="#">
+                  <h3 class="prod-card__caption">Basic Dress Green</h3>
+                </a>
+                <div class="prod-card__bottom-items items-bottom">
+                  <span class="items-bottom__category">Dress</span>
+                  <div class="items-bottom__price">
+                    <span class="items-bottom__actual">$236.00</span>
+                    <!-- <span class="items-bottom__sale"></span> -->
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="prod-card__article">
+              <div class="prod-card__inner">
+                <a href="#" class="prod-card__link-pict">
+                  <img src="img/main/product/nike-air.webp" alt="Nike Air Zoom Pegasus" class="prod-card__picture">
+                </a>
+                <div class="prod-card__hover-items">
+                  <div class="prod-card__store-items">
+                    <button type="button" class="prod-card__favorite _icon-fav"></button>
+                    <button type="button" class="prod-card__search _icon-srch"></button>
+                  </div>
+                  <button type="button" class="prod-card__shop-button">
+                    <span class="_icon-shop">Shop now</span>
+                  </button>
+                </div>
+              </div>
+              <!-- <span class="prod-card__hot-ribbon">Hot</span> -->
+              <span class="prod-card__sale-ribbon">Sale</span>
+              <div class="prod-card__bottom-inner">
+                <a href="#">
+                  <h3 class="prod-card__caption">Nike Air Zoom Pegasus</h3>
+                </a>
+                <div class="prod-card__bottom-items items-bottom">
+                  <span class="items-bottom__category">shoe</span>
+                  <div class="items-bottom__price">
+                    <span class="items-bottom__actual">$220.00</span>
+                    <span class="items-bottom__sale">$198.00</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="prod-card__article">
+              <div class="prod-card__inner">
+                <a href="#" class="prod-card__link-pict">
+                  <img src="img/main/product/nike-repel.webp" alt="Nike Repel Miler" class="prod-card__picture">
+                </a>
+                <div class="prod-card__hover-items">
+                  <div class="prod-card__store-items">
+                    <button type="button" class="prod-card__favorite _icon-fav"></button>
+                    <button type="button" class="prod-card__search _icon-srch"></button>
+                  </div>
+                  <button type="button" class="prod-card__shop-button">
+                    <span class="_icon-shop">Shop now</span>
+                  </button>
+                </div>
+              </div>
+              <!-- <span class="prod-card__hot-ribbon">Hot</span>
+              <span class="prod-card__sale-ribbon">Sale</span> -->
+              <div class="prod-card__bottom-inner">
+                <a href="#">
+                  <h3 class="prod-card__caption">Nike Repel Miler</h3>
+                </a>
+                <div class="prod-card__bottom-items items-bottom">
+                  <span class="items-bottom__category">Dress</span>
+                  <div class="items-bottom__price">
+                    <span class="items-bottom__actual">$120.50</span>
+                    <!-- <span class="items-bottom__sale"></span> -->
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="prod-card__article">
+              <div class="prod-card__inner">
+                <a href="#" class="prod-card__link-pict">
+                  <img src="img/main/product/nike-sportswear.webp" alt="Nike Sportswear Futura Luxe"
+                    class="prod-card__picture">
+                </a>
+                <div class="prod-card__hover-items">
+                  <div class="prod-card__store-items">
+                    <button type="button" class="prod-card__favorite _icon-fav"></button>
+                    <button type="button" class="prod-card__search _icon-srch"></button>
+                  </div>
+                  <button type="button" class="prod-card__shop-button">
+                    <span class="_icon-shop">Shop now</span>
+                  </button>
+                </div>
+              </div>
+              <!-- <span class="prod-card__hot-ribbon">Hot</span>
+              <span class="prod-card__sale-ribbon">Sale</span> -->
+              <div class="prod-card__bottom-inner">
+                <a href="#">
+                  <h3 class="prod-card__caption">Nike Sportswear Futura Luxe</h3>
+                </a>
+                <div class="prod-card__bottom-items items-bottom">
+                  <span class="items-bottom__category">Glasses</span>
+                  <div class="items-bottom__price">
+                    <span class="items-bottom__actual">$160.00</span>
+                    <!-- <span class="items-bottom__sale"></span> -->
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+      <div class="zara-block">
+        <div class="zara-block__container">
+          <img src="img/main/banner/photo-bg.webp" alt="model photo" class="zara-block__photo-bg">
+          <div class="zara-block__info">
+            <img src="img/main/banner/logo-title.svg" alt="zara logo" class="zara-block__logo-title">
+            <p class="zara-block__text">
+              Lustrous yet understated. The new evening
+              wear collection exclusively offered at the
+              reopened Giorgio Armani boutique in Los
+              Angeles.
+            </p>
+            <button type="button" class="zara-block__collection-button">
+              <span>See collection</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="product-block product-block--slide">
+        <section class="product-block__container">
+          <h2 class="product-block__title">Best sellers</h2>
+          <div class="product-block__category-items items-category">
+            <ul class="items-category__list">
+              <li>
+                <label for="all-products-bottom" class="items-category__label">
+                  <input type="radio" name="categories" value="form[all-products]" id="all-products-bottom"
+                    class="items-category__input">
+                  <span class="items-category__text">All products</span>
+                </label>
+              </li>
+              <li>
+                <label for="t-shirt-bottom" class="items-category__label">
+                  <input type="radio" name="categories" value="form[t-shirt]" id="t-shirt-bottom"
+                    class="items-category__input">
+                  <span class="items-category__text">T-Shirt</span>
+                </label>
+              </li>
+              <li>
+                <label for="hoodies-bottom" class="items-category__label">
+                  <input type="radio" name="categories" value="form[hoodies]" id="hoodies-bottom"
+                    class="items-category__input">
+                  <span class="items-category__text">Hoodies</span>
+                </label>
+              </li>
+              <li>
+                <label for="jacket-bottom" class="items-category__label">
+                  <input type="radio" name="categories" value="form[jacket]" id="jacket-bottom"
+                    class="items-category__input">
+                  <span class="items-category__text">Jacket</span>
+                </label>
+              </li>
+            </ul>
+            <button type="button" class="items-category__filter-button">
+              <span class="_icon-filt">Filter</span>
+            </button>
+          </div>
+          <div class="product-block__cards-section prod-card swiper">
+            <div class="prod-card__inner swiper-wrapper">
+
+              <article class="prod-card__article swiper-slide">
+                <div class="prod-card__inner">
+                  <a href="#" class="prod-card__link-pict">
+                    <img src="img/main/product/adicolor-classics.webp" alt="Adicolor classics joggers"
+                      class="prod-card__picture">
+                  </a>
+                  <div class="prod-card__hover-items">
+                    <div class="prod-card__store-items">
+                      <button type="button" class="prod-card__favorite _icon-fav"></button>
+                      <button type="button" class="prod-card__search _icon-srch"></button>
+                    </div>
+                    <button type="button" class="prod-card__shop-button">
+                      <span class="_icon-shop">Shop now</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- <span class="prod-card__hot-ribbon">Hot</span>
+                <span class="prod-card__sale-ribbon">Sale</span> -->
+                <div class="prod-card__bottom-inner">
+                  <a href="#">
+                    <h3 class="prod-card__caption">Adicolor classics joggers</h3>
+                  </a>
+                  <div class="prod-card__bottom-items items-bottom">
+                    <span class="items-bottom__category">Dress</span>
+                    <div class="items-bottom__price">
+                      <span class="items-bottom__actual">$63.85</span>
+                      <!-- <span class="items-bottom__sale"></span> -->
+                    </div>
+                  </div>
+                </div>
+              </article>
+  
+              <article class="prod-card__article swiper-slide">
+                <div class="prod-card__inner">
+                  <a href="#" class="prod-card__link-pict">
+                    <img src="img/main/product/nike-sportswear-bag.webp" alt="Nike Sportswear Futura Luxe"
+                      class="prod-card__picture">
+                  </a>
+                  <div class="prod-card__hover-items">
+                    <div class="prod-card__store-items">
+                      <button type="button" class="prod-card__favorite _icon-fav"></button>
+                      <button type="button" class="prod-card__search _icon-srch"></button>
+                    </div>
+                    <button type="button" class="prod-card__shop-button">
+                      <span class="_icon-shop">Shop now</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- <span class="prod-card__hot-ribbon">Hot</span>
+                <span class="prod-card__sale-ribbon">Sale</span> -->
+                <div class="prod-card__bottom-inner">
+                  <a href="#">
+                    <h3 class="prod-card__caption">Nike Sportswear Futura Luxe</h3>
+                  </a>
+                  <div class="prod-card__bottom-items items-bottom">
+                    <span class="items-bottom__category">Bag</span>
+                    <div class="items-bottom__price">
+                      <span class="items-bottom__actual">$130.00</span>
+                      <!-- <span class="items-bottom__sale"></span> -->
+                    </div>
+                  </div>
+                </div>
+              </article>
+  
+              <article class="prod-card__article swiper-slide">
+                <div class="prod-card__inner">
+                  <a href="#" class="prod-card__link-pict">
+                    <img src="img/main/product/geometric-print.webp" alt="Geometric print Scarf"
+                      class="prod-card__picture">
+                  </a>
+                  <div class="prod-card__hover-items">
+                    <div class="prod-card__store-items">
+                      <button type="button" class="prod-card__favorite _icon-fav"></button>
+                      <button type="button" class="prod-card__search _icon-srch"></button>
+                    </div>
+                    <button type="button" class="prod-card__shop-button">
+                      <span class="_icon-shop">Shop now</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- <span class="prod-card__hot-ribbon">Hot</span>
+                <span class="prod-card__sale-ribbon">Sale</span> -->
+                <div class="prod-card__bottom-inner">
+                  <a href="#">
+                    <h3 class="prod-card__caption">Geometric print Scarf</h3>
+                  </a>
+                  <div class="prod-card__bottom-items items-bottom">
+                    <span class="items-bottom__category">scarf</span>
+                    <div class="items-bottom__price">
+                      <span class="items-bottom__actual">$53.00</span>
+                      <!-- <span class="items-bottom__sale"></span> -->
+                    </div>
+                  </div>
+                </div>
+              </article>
+  
+              <article class="prod-card__article swiper-slide">
+                <div class="prod-card__inner">
+                  <a href="#" class="prod-card__link-pict">
+                    <img src="img/main/product/yellow-reserved.webp" alt="Yellow Reserved Hoodie"
+                      class="prod-card__picture">
+                  </a>
+                  <div class="prod-card__hover-items">
+                    <div class="prod-card__store-items">
+                      <button type="button" class="prod-card__favorite _icon-fav"></button>
+                      <button type="button" class="prod-card__search _icon-srch"></button>
+                    </div>
+                    <button type="button" class="prod-card__shop-button">
+                      <span class="_icon-shop">Shop now</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- <span class="prod-card__hot-ribbon">Hot</span> -->
+                <span class="prod-card__sale-ribbon">Sale</span>
+                <div class="prod-card__bottom-inner">
+                  <a href="#">
+                    <h3 class="prod-card__caption">Yellow Reserved Hoodie</h3>
+                  </a>
+                  <div class="prod-card__bottom-items items-bottom">
+                    <span class="items-bottom__category">Dress</span>
+                    <div class="items-bottom__price">
+                      <span class="items-bottom__actual">$364.00</span>
+                      <span class="items-bottom__sale">$155.00</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+  
+              <article class="prod-card__article swiper-slide">
+                <div class="prod-card__inner">
+                  <a href="#" class="prod-card__link-pict">
+                    <img src="img/main/product/basic-dress.webp" alt="Basic Dress Green" class="prod-card__picture">
+                  </a>
+                  <div class="prod-card__hover-items">
+                    <div class="prod-card__store-items">
+                      <button type="button" class="prod-card__favorite _icon-fav"></button>
+                      <button type="button" class="prod-card__search _icon-srch"></button>
+                    </div>
+                    <button type="button" class="prod-card__shop-button">
+                      <span class="_icon-shop">Shop now</span>
+                    </button>
+                  </div>
+                </div>
+                <span class="prod-card__hot-ribbon">Hot</span>
+                <!-- <span class="prod-card__sale-ribbon">Sale</span> -->
+                <div class="prod-card__bottom-inner">
+                  <a href="#">
+                    <h3 class="prod-card__caption">Basic Dress Green</h3>
+                  </a>
+                  <div class="prod-card__bottom-items items-bottom">
+                    <span class="items-bottom__category">Dress</span>
+                    <div class="items-bottom__price">
+                      <span class="items-bottom__actual">$236.00</span>
+                      <!-- <span class="items-bottom__sale"></span> -->
+                    </div>
+                  </div>
+                </div>
+              </article>
+  
+              <article class="prod-card__article swiper-slide">
+                <div class="prod-card__inner">
+                  <a href="#" class="prod-card__link-pict">
+                    <img src="img/main/product/nike-air.webp" alt="Nike Air Zoom Pegasus" class="prod-card__picture">
+                  </a>
+                  <div class="prod-card__hover-items">
+                    <div class="prod-card__store-items">
+                      <button type="button" class="prod-card__favorite _icon-fav"></button>
+                      <button type="button" class="prod-card__search _icon-srch"></button>
+                    </div>
+                    <button type="button" class="prod-card__shop-button">
+                      <span class="_icon-shop">Shop now</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- <span class="prod-card__hot-ribbon">Hot</span> -->
+                <span class="prod-card__sale-ribbon">Sale</span>
+                <div class="prod-card__bottom-inner">
+                  <a href="#">
+                    <h3 class="prod-card__caption">Nike Air Zoom Pegasus</h3>
+                  </a>
+                  <div class="prod-card__bottom-items items-bottom">
+                    <span class="items-bottom__category">shoe</span>
+                    <div class="items-bottom__price">
+                      <span class="items-bottom__actual">$220.00</span>
+                      <span class="items-bottom__sale">$198.00</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+  
+              <article class="prod-card__article swiper-slide">
+                <div class="prod-card__inner">
+                  <a href="#" class="prod-card__link-pict">
+                    <img src="img/main/product/nike-repel.webp" alt="Nike Repel Miler" class="prod-card__picture">
+                  </a>
+                  <div class="prod-card__hover-items">
+                    <div class="prod-card__store-items">
+                      <button type="button" class="prod-card__favorite _icon-fav"></button>
+                      <button type="button" class="prod-card__search _icon-srch"></button>
+                    </div>
+                    <button type="button" class="prod-card__shop-button">
+                      <span class="_icon-shop">Shop now</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- <span class="prod-card__hot-ribbon">Hot</span>
+                <span class="prod-card__sale-ribbon">Sale</span> -->
+                <div class="prod-card__bottom-inner">
+                  <a href="#">
+                    <h3 class="prod-card__caption">Nike Repel Miler</h3>
+                  </a>
+                  <div class="prod-card__bottom-items items-bottom">
+                    <span class="items-bottom__category">Dress</span>
+                    <div class="items-bottom__price">
+                      <span class="items-bottom__actual">$120.50</span>
+                      <!-- <span class="items-bottom__sale"></span> -->
+                    </div>
+                  </div>
+                </div>
+              </article>
+  
+              <article class="prod-card__article swiper-slide">
+                <div class="prod-card__inner">
+                  <a href="#" class="prod-card__link-pict">
+                    <img src="img/main/product/nike-sportswear.webp" alt="Nike Sportswear Futura Luxe"
+                      class="prod-card__picture">
+                  </a>
+                  <div class="prod-card__hover-items">
+                    <div class="prod-card__store-items">
+                      <button type="button" class="prod-card__favorite _icon-fav"></button>
+                      <button type="button" class="prod-card__search _icon-srch"></button>
+                    </div>
+                    <button type="button" class="prod-card__shop-button">
+                      <span class="_icon-shop">Shop now</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- <span class="prod-card__hot-ribbon">Hot</span>
+                <span class="prod-card__sale-ribbon">Sale</span> -->
+                <div class="prod-card__bottom-inner">
+                  <a href="#">
+                    <h3 class="prod-card__caption">Nike Sportswear Futura Luxe</h3>
+                  </a>
+                  <div class="prod-card__bottom-items items-bottom">
+                    <span class="items-bottom__category">Glasses</span>
+                    <div class="items-bottom__price">
+                      <span class="items-bottom__actual">$160.00</span>
+                      <!-- <span class="items-bottom__sale"></span> -->
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </section>
+      </div>
+      <div class="social-block">
+        <div class="social-block__container">
+          <section class="social-block__instagram instagram">
+            <h2 class="instagram__title">Follow products and discounts on instagram</h2>
+            <div class="instagram__card-box">
+              <a href="#" class="instagram__item _icon-inst">
+                <img src="img/main/social/inst-photo-1.webp" alt="photo from an Instagram post"
+                  class="instagram__image">
+              </a>
+              <a href="#" class="instagram__item _icon-inst">
+                <img src="img/main/social/inst-photo-2.webp" alt="photo from an Instagram post"
+                  class="instagram__image">
+              </a>
+              <a href="#" class="instagram__item _icon-inst">
+                <img src="img/main/social/inst-photo-3.webp" alt="photo from an Instagram post"
+                  class="instagram__image">
+              </a>
+              <a href="#" class="instagram__item _icon-inst">
+                <img src="img/main/social/inst-photo-4.webp" alt="photo from an Instagram post"
+                  class="instagram__image">
+              </a>
+              <a href="#" class="instagram__item _icon-inst">
+                <img src="img/main/social/inst-photo-5.webp" alt="photo from an Instagram post"
+                  class="instagram__image">
+              </a>
+              <a href="#" class="instagram__item _icon-inst">
+                <img src="img/main/social/inst-photo-6.webp" alt="photo from an Instagram post"
+                  class="instagram__image">
+              </a>
+            </div>
+          </section>
+          <section class="social-block__email email">
+            <h2 class="email__title">Or subscribe to the newsletter</h2>
+            <form action="#" class="email__form">
+              <input type="email" name="mail" autocomplete="on" id="email" class="email__input"
+                placeholder="Email Address..." required>
+              <button type="submit" name="mail" class="email__button">
+                <span>Submit</span>
+              </button>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__head-block head-block">
+        <div class="head-block__container">
+          <div class="head-block__shop-info shop-info">
+            <a href="#" class="shop-info__logo">
+              <img src="img/footer/head-block/logo.svg" alt="coral logo">
+            </a>
+            <p class="shop-info__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua
+            </p>
+            <ul class="shop-info__actions-list list-actions">
+              <li class="list-actions__item">
+                <a href="#" class="list-actions__link _icon-facebook"></a>
+              </li>
+              <li class="list-actions__item">
+                <a href="#" class="list-actions__link _icon-twitter"></a>
+              </li>
+              <li class="list-actions__item">
+                <a href="#" class="list-actions__link _icon-linkedin"></a>
+              </li>
+              <li class="list-actions__item">
+                <a href="#" class="list-actions__link _icon-inst"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="head-block__section-inner">
+            <section class="head-block__catalog catalog-links">
+              <h3 class="catalog-links__title">catalog</h3>
+              <ul class="catalog-links__list">
+                <li class="catalog-links__item">
+                  <a href="#" class="catalog-links__link">Necklaces</a>
+                </li>
+                <li class="catalog-links__item">
+                  <a href="#" class="catalog-links__link">Hoodies</a>
+                </li>
+                <li class="catalog-links__item">
+                  <a href="#" class="catalog-links__link">Jewelry Box</a>
+                </li>
+                <li class="catalog-links__item">
+                  <a href="#" class="catalog-links__link">T-shirt</a>
+                </li>
+                <li class="catalog-links__item">
+                  <a href="#" class="catalog-links__link">Jacket</a>
+                </li>
+              </ul>
+            </section>
+            <section class="head-block__about-us-links links-about">
+              <h3 class="links-about__title">About us</h3>
+              <ul class="links-about__list">
+                <li class="links-about__item">
+                  <a href="#" class="links-about__link">Our Producers</a>
+                </li>
+                <li class="links-about__item">
+                  <a href="#" class="links-about__link">Sitemap</a>
+                </li>
+                <li class="links-about__item">
+                  <a href="#" class="links-about__link">FAQ</a>
+                </li>
+                <li class="links-about__item">
+                  <a href="#" class="links-about__link">About Us</a>
+                </li>
+                <li class="links-about__item">
+                  <a href="#" class="links-about__link">Terms & Conditions</a>
+                </li>
+              </ul>
+            </section>
+            <section class="head-block__cust-serv-links links-cust-serv">
+              <h3 class="links-cust-serv__title">Customer services</h3>
+              <ul class="links-cust-serv__list">
+                <li class="links-cust-serv__item">
+                  <a href="#" class="links-cust-serv__link">Contact Us</a>
+                </li>
+                <li class="links-cust-serv__item">
+                  <a href="#" class="links-cust-serv__link">Track Your Order</a>
+                </li>
+                <li class="links-cust-serv__item">
+                  <a href="#" class="links-cust-serv__link">Product Care & Repair</a>
+                </li>
+                <li class="links-cust-serv__item">
+                  <a href="#" class="links-cust-serv__link">Book an Appointment</a>
+                </li>
+                <li class="links-cust-serv__item">
+                  <a href="#" class="links-cust-serv__link">Shipping & Returns</a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom-block bottom-block">
+        <div class="bottom-block__container">
+          <p class="bottom-block__copyright-info">© 2022 Coral , Inc.</p>
+          <img src="img/footer/bottom-block/icons-payment.webp" alt="payment icons" class="bottom-block__payment-icons">
+          <a href="#" class="bottom-block__scroll-button _icon-arr">Scroll to top</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/JS.js"></script>
+  <script src="js/dynamic_adapt.js"></script>
+</body>
+
+</html>
