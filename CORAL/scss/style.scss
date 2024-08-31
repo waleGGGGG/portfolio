@@ -1,0 +1,115 @@
+@use "sass:math";
+// fonts
+@import "_fonts.scss";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:regular,600&display=swap");
+
+// reset
+@import "_reset.scss";
+
+// mixins
+@import "_mixins.scss";
+
+// ======================================================= //
+
+// Налаштування адаптивної сітки
+
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+// відступи не враховуємо, пишемо суто розмір обмежуючого контейнеру
+$maxWidthContainer: 1320;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// ======================================================= //
+
+// адаптивні розміри
+// @include adaptiveValue("font-size", 48, 12);
+// clamp(14px, calc(14px + (20 - 14) * ((100vw - 393px) / (1920 - 393))), 20px);
+
+// custom properties
+$hov-color: #FF6F61;
+$bg-color: #f0f0f0;
+$accent-color: #1E2832;
+
+//functions
+
+// sections
+@import "header.scss";
+@import "page__top-block.scss";
+@import "page__brands-block.scss";
+@import "page__popular-block.scss";
+@import "page__product-block.scss";
+@import "page__zara-block.scss";
+@import "page__product-block-slide.scss";
+@import "page__social-block.scss";
+@import "footer.scss";
+
+// general styles / components
+
+html {
+    // scroll-behavior: smooth;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+
+    main {
+        flex-grow: 1;
+    }
+}
+
+[class*="__container"] {
+    max-width: toRem($containerWidth);
+    padding-left: toRem(math.div($containerPadding, 2));
+    padding-right: toRem(math.div($containerPadding, 2));
+    margin: 0 auto;
+}
+
+[class*="__hot-ribbon"],
+[class*="__sale-ribbon"] {
+    font-size: toRem(12);
+    line-height: 1.3333;
+    /* 16/12 */
+    padding: toRem(4) toRem(12);
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: absolute;
+    top: 7%;
+    left: 0;
+}
+
+[class*="__hot-ribbon"] {
+    background-color: $hov-color;
+}
+
+[class*="__sale-ribbon"] {
+    background-color: $accent-color;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    cursor: default;
+}
+
+.link-shop {
+    transition-duration: 0.3s;
+    color: #fff;
+
+    @media (any-hover:hover) {
+        &:hover {
+            background-color: $hov-color;
+            transition-duration: 0.3s;
+        }
+    }
+}

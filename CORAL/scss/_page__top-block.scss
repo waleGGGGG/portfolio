@@ -1,0 +1,163 @@
+.top-block {
+    background-color: $bg-color;
+    position: relative;
+
+    &::before {
+        content: "";
+        background: url(../img/main/collections/decor-left.svg);
+        height: toRem(83);
+        width: toRem(94);
+        position: absolute;
+        top: clamp(200px, 7.083rem + 27.09vw, 479px);
+        left: 0;
+    }
+
+    &::after {
+        content: "";
+        background: url(../img/main/collections/decor-right.svg);
+        height: toRem(265);
+        width: toRem(238);
+        position: absolute;
+        top: clamp(100px, 3.104rem + 15.73vw, 262px);
+        right: toRem(-69);
+    }
+
+    // .collections-block__container
+
+    &__container {
+        display: flex;
+        padding-top: clamp(20px, -0.323rem + 7.86vw, 101px);
+        padding-bottom: clamp(40px, 1.723rem + 3.88vw, 80px);
+        column-gap: toRem(98);
+
+        @media (max-width: toEm(1250.98)) {
+            column-gap: toRem(40);
+            justify-content: space-between;
+        }
+
+        @media (max-width: toEm(620.98)) {
+            flex-direction: column;
+            align-items: center;
+            row-gap: toRem(25);
+        }
+    }
+
+    // .collections-block__info
+
+    &__info {
+        padding-top: clamp(5px, -1.027rem + 6.70vw, 74px);
+    }
+
+    // .collections-block__photo 424/542
+
+    &__photo {
+        flex: 0 0 toRem(224);
+        max-width: toRem(424);
+        height: 100%;
+        position: relative;
+        margin-right: clamp(10px, 0.431rem + 0.97vw, 20px);
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 37.73% 0 37.73% 0 / 29.52% 0 29.52% 0;
+            border: 2px solid rgba(0, 0, 0, 0.25);
+            position: absolute;
+            left: toRem(18);
+            top: toRem(18);
+        }
+
+        @media (max-width: toEm(767.98)) {
+            &::after {
+                left: toRem(12);
+                top: toRem(12);
+            }
+        }
+
+        img {
+            border-radius: 37.73% 0 37.73% 0 / 29.52% 0 29.52% 0;
+            aspect-ratio: 424 / 542;
+            max-width: toRem(424);
+            object-fit: cover;
+            z-index: 5;
+            position: relative;
+
+            @media (max-width: toEm(1199.98)) {
+                aspect-ratio: 384 / 502;
+                max-width: toRem(384);
+            }
+
+            @media (max-width: toEm(991.98)) {
+                aspect-ratio: 344 / 462;
+                max-width: toRem(344);
+            }
+
+            @media (max-width: toEm(767.98)) {
+                aspect-ratio: 294 / 412;
+                max-width: toRem(294);
+            }
+
+            @media (max-width: toEm(620.98)) {
+                aspect-ratio: 424 / 542;
+                max-width: toRem(424);
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.info {
+    font-family: "Roboto", sans-serif;
+    max-width: toRem(686);
+
+    @media (max-width: toEm(767.98)) {
+        max-width: toRem(542);
+    }
+
+    // .info__title
+
+    &__title {
+        font-size: clamp(44px, 2.167rem + 2.91vw, 74px);
+        line-height: 0.7432;
+        /* 55/74 */
+        font-weight: 200;
+        margin-bottom: toEm(11.4);
+        cursor: default;
+    }
+
+    // .info__about
+
+    &__about,
+    p {
+        font-size: clamp(16px, 0.728rem + 1.36vw, 30px);
+        line-height: 1.8333;
+        /* 55/30 */
+        text-transform: capitalize;
+        margin-bottom: toEm(35.2);
+        cursor: default;
+    }
+
+    // .info__shop-link
+
+    &__shop-link {
+        position: relative;
+        font-size: clamp(17px, 0.748rem + 1.26vw, 29px);
+        display: inline-block;
+        background-color: $accent-color;
+        padding: toEm(10.48) toEm(14.35);
+        z-index: 5;
+
+
+        span {
+            line-height: 1.1724;
+            /* 34/29 */
+
+            &::before {
+                font-size: clamp(17px, 0.825rem + 0.87vw, 25px);
+                margin-right: toEm(7.06);
+            }
+        }
+    }
+}
